@@ -60,6 +60,7 @@ public class BotController implements TelegramMvcController {
 	@MessageRequest("/register {name:[\\S]+}")
 	public String register(@BotPathVariable("name") String userName, Chat chat) {
 		// Return a string if you need to reply with a simple message
+		
 		ResponseMessage message = subscriberService.saveSubscriberTelegram(chat, userName);
 		return "Hello, " + message.getMessage();
 	}
