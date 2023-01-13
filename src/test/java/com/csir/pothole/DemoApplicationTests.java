@@ -5,6 +5,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -49,12 +50,6 @@ class DemoApplicationTests {
 
 	
 	
-	@Test
-	void contextLoads2() throws JsonProcessingException, Exception {
-		Subscriber subscriber = new Subscriber();
-		subscriber.setName("Bryan");
-		subscriber.setTelephoneNumber("0545730281");
-		
-	}
+
 
 }
