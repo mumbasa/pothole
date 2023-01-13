@@ -30,5 +30,11 @@ public class SubcriberController {
 		
 		
 	}
+	@PostMapping("/activate/telegrams")
+	public ResponseMessage activateTelegrams(@RequestBody Subscriber sub) {
+		return subscriberService.activate(sub);
+		
+		
+	}
 
 }
